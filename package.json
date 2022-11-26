@@ -1,0 +1,24 @@
+{
+  "name": "five.db",
+  "version": "0.0.1",
+  "description": "Türkçe SQLite Veya BSON Veritabanı Modülüdür",
+  "main": "index.js",
+  "types": "src/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Beş#0005",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^7.6.2",
+    "bson": "^4.7.0",
+    "lodash": "^4.17.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bes-js/five.db.git"
+  },
+  "homepage": "https://github.com/Bes-js/five.db#readme",
+  "keywords": ["db", "database", "five", "sqlite", "bson", "quick","five.db","beş","discord","data","quick.db"]
+}
