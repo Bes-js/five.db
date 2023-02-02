@@ -17,7 +17,7 @@ Tanımlama;
 const db = require("five.db").five();
 ```
 
-Paket Otomatikmen `five.db` Dosyası Oluşturacaktır.
+Paket Otomatikmen `five.bson` Dosyası Oluşturacaktır.
 
 ## Örnek Kullanım 
 
