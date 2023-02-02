@@ -1,6 +1,6 @@
 # five.db Nedir?
 
-`five.db` Diğer Veritabanı Modülleriyle Oynanmış Olan Veritabanı Modülüdür SQLite Ve BSON Veritabanlarını İçinde Bulundurur.
+`five.db` Diğer Veritabanı Modülleriyle Oynanmış Olan Veritabanı Modülüdür BSON Veritabanı Üzerine Kuluşmuştur.
 
 ## Nasıl Kurulur?
 
@@ -12,14 +12,9 @@
 
 Kurulumdan Sonra Modülü Hangi Veritabanı Stilinde Kullanıcağınızı Seçin.
 
-SQLite Formatı İçin;
+Tanımlama;
 ```javascript
-const db = require("five.db").sqlite();
-```
-
-BSON Formatı İçin;
-```javascript
-const db = require("five.db").bson();
+const db = require("five.db").five();
 ```
 
 Paket Otomatikmen `five.db` Dosyası Oluşturacaktır.
@@ -27,7 +22,7 @@ Paket Otomatikmen `five.db` Dosyası Oluşturacaktır.
 ## Örnek Kullanım 
 
 ```javascript
-const db = require("five.db").sqlite();
+const db = require("five.db").five();
 const client = require("discord.js");
 
 client.on("messageCreate", async (message) => {
