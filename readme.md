@@ -1,5 +1,5 @@
 <h6 align="center">
-<img src="https://cdn.discordapp.com/attachments/950167988127006821/1089714747961774202/five-db-logo.png" width="700px" height="470px" alt="stats" align="center">
+<img src="https://github.com/Bes-js/five.db/blob/main/five-db-logo.png?raw=true" width="700px" height="470px" alt="stats" align="center">
 <h6/>
 
 
