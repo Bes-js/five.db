@@ -1,8 +1,18 @@
-# five.db Nedir?
+<h6 align="center">
+<img src="https://cdn.discordapp.com/attachments/950167988127006821/1089714747961774202/five-db-logo.png" width="700px" height="470px" alt="stats" align="center">
+<h6/>
 
-`five.db` Diğer Veritabanı Modülleriyle Oynanmış Olan Veritabanı Modülüdür BSON Veritabanı Üzerine Kuluşmuştur.
 
-## Nasıl Kurulur?
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=E600AF&repeat=false&width=435&lines=%F0%9F%93%83+D%C3%B6k%C3%BCman)](https://git.io/typing-svg)
+
+[Döküman'a Ulaşmak İçin Buraya Tıklayın!](https://fivesobes.gitbook.io/five.db/)
+
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00F701&repeat=false&width=435&lines=%E2%9D%93+five.db+Nedir%3F)](https://git.io/typing-svg)
+
+`five.db` Diğer Veritabanı Modülleriyle Oynanmış Olan Türkçe Veritabanı Modülüdür.
+ BSON,JSON Ve Yaml Üzerine Kuluşmuştur.
+
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FF0000&repeat=false&width=435&lines=%E2%9D%94+Nas%C4%B1l+Kurulur%3F)](https://git.io/typing-svg)
 
 `five.db` Modülünü Kurmak İçin Bir Konsol Açın Ve Aşşağıdaki Kodu Yazın.
 
@@ -12,83 +22,16 @@
 
 Kurulumdan Sonra Modülü Hangi Veritabanı Stilinde Kullanıcağınızı Seçin.
 
-Tanımlama;
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00EDFF&repeat=false&width=435&lines=%F0%9F%8E%AF+Tan%C4%B1mlama)](https://git.io/typing-svg)
 ```javascript
-const db = require("five.db").five();
+const { BsonDatabase,JsonDatabase,YamlDatabase } = require("five.db");
+
+const db = new YamlDatabase();
 ```
 
-Paket Otomatikmen `five.bson` Dosyası Oluşturacaktır.
+Paket Otomatikmen `fivedb.<Veritabanı Uzantısı>` Dosyası Oluşturacaktır.
 
-## Örnek Kullanım 
+<br> <br/>
+# [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=9D06E6&repeat=false&width=435&lines=Destek+%26+%C4%B0leti%C5%9Fim)](https://git.io/typing-svg)
 
-```javascript
-const db = require("five.db").five();
-const client = require("discord.js");
-
-client.on("messageCreate", async (message) => {
-
-  if(message.content.includes("!sistem-aç")){
-
-   db.set("saas",true); // 'saas' İsminde Veri Oluşturup Ona 'true' Değerini Veriyoruz
-   message.reply("Sistem Başarıyla Açıldı.")
-
-  }else if(message.content.includes("!sistem-kapat")){
-
-   db.set("saas",false); // 'saas' İsmindeki Verimizi 'false' Değeriyle Değiştiriyoruz
-   message.reply("Sistem Başarıyla Kapatıldı.")
-
-  }else{
-
-  let kontrol = await db.get("saas"); // 'saas' İsmindeki Verimizin Kayıtlı Olan Değerlerini Alıyoruz
-  // Ve Verimizi kontrol Olarak Tanımlıyoruz
-  
-    if (kontrol == true) { // kontrol(Aldığımız Veri) 'true' Değerine Eşit İse Devam Ettir
-    if (message.content.toLowerCase() === "sa"){
-      message.reply("Aleyküm Selam.");
-    }
-  }
-}
-});
-```
-
-## Nasıl Kullanılır / Fonksiyonlar Nelerdir?
-
-Veri Kaydetme / Ayarlama
-```javascript
-  db.set("beş", "5") // true ~ "5"
-```
-
-Veri Çağırma / Alma
-```javascript
-  db.get("beş") // "5"
-  db.all() // [{ ID: "beş", value: "5" }]
-```
-
-Array İşlemleri
-```javascript
-    db.push("beş", ["5", "10"]) // ["5", "10"]
-    db.pull("beş", "5") // ["10"]
-```
-
-Veri Kontrolü
-```javascript
-   db.has("beş") // 'true' veya 'false'
-```
-    
-Veri Toplama / Çıkarma
-```javascript
-    db.add("deneme", 35) // +35
-    db.sub("deneme", 30) // -30 | 35 - 30 = 5
-```
-
-Veri Silme / Sıfırlama
-```javascript
-    db.delete('beş') // Belirtilen Veriyi Siler
-    db.deleteValue("5") // Veriler Arasından Belirtilen Değerdeki Verileri Siler
-    db.deleteAll() // Bütün Verileri Siler / Format
-```
-
-<h1 align="center"> <img src="https://cdn.discordapp.com/emojis/842491787955142656.gif?size=128&quality=lossless" width="30px"> Destek & İletişim <img src="https://cdn.discordapp.com/emojis/842491787955142656.gif?size=128&quality=lossless" width="30px"> </h1>
-
-[![Discord Presence](https://lanyard-profile-readme.vercel.app/api/928259219038302258?hideDiscrim=true)](https://discord.com/users/928259219038302258)
-[![Discord Presence](https://lanyard-profile-readme.vercel.app/api/798615228728082462?hideDiscrim=true)](https://discord.com/users/798615228728082462)
+[![Discord Presence](https://lanyard-profile-readme.vercel.app/api/928259219038302258?theme=light&hideDiscrim=true&hideBadges=false&bg=376074&borderRadius=30px&idleMessage=İletişim%20İçin%20Tıkla)](https://discord.com/users/928259219038302258)
