@@ -5,7 +5,7 @@
 
 # [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=E600AF&repeat=false&width=435&lines=%F0%9F%93%83+D%C3%B6k%C3%BCman)](https://git.io/typing-svg)
 
-[Döküman'a Ulaşmak İçin Buraya Tıklayın!](https://fivesobes.gitbook.io/five.db/)
+[> Döküman'a Ulaşmak İçin Buraya Tıklayın!](https://fivesobes.gitbook.io/five.db/)
 
 # [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00F701&repeat=false&width=435&lines=%E2%9D%93+five.db+Nedir%3F)](https://git.io/typing-svg)
 
